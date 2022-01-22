@@ -1,16 +1,14 @@
 package com.techreturners.cats;
 
-public class LionCat extends DomesticCat {
-    public int getAverageHeight() {
-        return 1100;
+public class LionCat extends AnimalAbstract {
+    LionCat() {
+        super("Roar!!!!", "wild", 1100);
     }
 
+    @Override
     public String eat() {
-        return "Roar!!!!";
-    }
-
-    public String getSetting() {
-        return "wild";
+        return this.eat;
     }
 
 }
+
